@@ -1,13 +1,13 @@
-# Mason Agent — FastAPI RAG (No Docker)
+# Tidal Wave Agent
 
-A minimal Retrieval-Augmented Generation API that serves answers from your **Mason KB**.  
+A minimal Retrieval-Augmented Generation API that serves answers from your **tidal-wave-agent KB**.  
 This version is **non‑Docker**, auto-loads a `.env`, and uses Windows-friendly paths.
 
 ## Quick start ###
 
 1) **Unzip your seed pack** (from earlier) into `./knowledge/`
 ```
-mason_agent_fastapi_nodocker/
+tidal-wave-agent/
   app/
   tests/
   knowledge/
@@ -33,8 +33,7 @@ GOLDEN_PATH=knowledge/golden_set.jsonl
 
 3) **Install & run**
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+python -m venv .venv .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
