@@ -45,7 +45,7 @@ class AskPayload(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"ok": "GUESS WHAT THIS IS RUNNING"}
+    return {"ok": True}
 
 @app.post("/ask")
 def ask(payload: AskPayload):
